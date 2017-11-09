@@ -1,0 +1,22 @@
+<h1>Welcome to the ToDo Application!</h1>
+
+<table style="border: 1px solid black;">
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Done</th>
+  </tr>
+<% @tasks.each do |task| %>
+  <tr>
+    <td>
+      <%= task.title %>
+    </td>
+    <td>
+      <%= task.description %>
+    </td>
+    <td>
+      <%= task.done %>
+    </td>
+  </tr>
+<% end %>
+</table>
