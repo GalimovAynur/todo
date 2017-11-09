@@ -1,2 +1,5 @@
 <span><%= @task.done %></span><h1><%= @task.title %></h1>
 <p><%= @task.description %></p>
+<%= link_to 'Destroy', task_path(@task),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
